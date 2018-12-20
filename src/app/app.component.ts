@@ -7,6 +7,8 @@ import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { SocialInfoPage } from '../pages/social-info/social-info';
 import { BaCodeScannerPage } from '../pages/ba-code-scanner/ba-code-scanner';
+import { GmapPage } from '../pages/gmap/gmap';
+import { Geolocation } from '@ionic-native/geolocation';
 
 @Component({
   templateUrl: 'app.html'
@@ -26,7 +28,8 @@ export class MyApp {
       { title: 'Home', component: HomePage,icon: 'ios-aperture' },
       { title: 'List', component: ListPage,icon: 'ios-aperture-outline' },
       { title: 'Me', component: SocialInfoPage,icon: 'md-aperture' },
-      { title: 'Scan', component: BaCodeScannerPage,icon: 'md-aperture' }
+      { title: 'Scan', component: BaCodeScannerPage,icon: 'md-aperture' },
+      { title: 'Map', component: GmapPage,icon: 'md-aperture' }
     ];
 
   }

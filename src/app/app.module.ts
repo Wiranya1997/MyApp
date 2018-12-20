@@ -12,12 +12,15 @@ import { SocialInfoPage } from '../pages/social-info/social-info';
 import { SMS } from '@ionic-native/sms';
 import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 import { BaCodeScannerPage } from '../pages/ba-code-scanner/ba-code-scanner';
+import { Geolocation } from '@ionic-native/geolocation';
+import { GmapPage } from '../pages/gmap/gmap';
+
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    ListPage,SocialInfoPage,BaCodeScannerPage
+    ListPage,SocialInfoPage,BaCodeScannerPage,GmapPage
   ],
   imports: [
     BrowserModule,
@@ -27,13 +30,14 @@ import { BaCodeScannerPage } from '../pages/ba-code-scanner/ba-code-scanner';
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage,SocialInfoPage,BaCodeScannerPage
+    ListPage,SocialInfoPage,BaCodeScannerPage,GmapPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     SMS,
     BarcodeScanner,
+    Geolocation,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
